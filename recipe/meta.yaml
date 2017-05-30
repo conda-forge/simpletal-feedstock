@@ -1,6 +1,6 @@
 {% set name = "SimpleTAL" %}
-{% set version = "4.3" %}
-{% set sha256 = "359b1654e9de136f4ad873de6729c39a499d2bb749fe539e17567ebba215fa2b" %}
+{% set version = "5.2" %}
+{% set sha256 = "ddff80acdebfffc9cb7de2e20761936ea06fcc7cf362678d4b66bd7bbce9e8e2" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  skip: True  # [py3k]
+  skip: True  # [py2k]
   script: python setup.py install
   
 requirements:
@@ -27,7 +27,7 @@ test:
     - simpletal
 
 about:
-  home: http://owlfish.com/software/simpleTAL/py2compatible/index.html
+  home: http://owlfish.com/software/simpleTAL
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
@@ -37,7 +37,7 @@ about:
     METAL specifications used in Zope to power HTML and XML
     templates. SimpleTAL is an independent implementation of TAL; there are no
     dependencies on Zope nor is any of the Zope work re-used.
-  doc_url: http://owlfish.com/software/simpleTAL/py2compatible/api.html
+  doc_url: http://owlfish.com/software/simpleTAL/api.html
 
 extra:
   recipe-maintainers:
