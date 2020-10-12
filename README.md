@@ -5,9 +5,11 @@ Home: http://owlfish.com/software/simpleTAL
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/simpletal-feedstock/blob/master/LICENSE.txt)
 
 Summary: a stand alone Python implementation of the TAL, TALES and METAL specifications used in Zope
+
+Documentation: http://owlfish.com/software/simpleTAL/api.html
 
 SimpleTAL is a stand alone Python implementation of the TAL, TALES and
 METAL specifications used in Zope to power HTML and XML
