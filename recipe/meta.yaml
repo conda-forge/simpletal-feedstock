@@ -12,12 +12,12 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1003
+  number: 1004
   skip: True  # [py2k]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   
 requirements:
-  build:
+  host:
     - python
     - pip
   run:
