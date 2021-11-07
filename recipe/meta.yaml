@@ -12,16 +12,16 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1005
-  skip: True  # [py2k]
+  number: 1006
+  noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
