@@ -12,20 +12,26 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1006
+  number: 1007
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
+    - pip
   imports:
     - simpletal
+  commands:
+    - pip check
 
 about:
   home: http://owlfish.com/software/simpleTAL
